@@ -3,8 +3,6 @@
 #
 # d = √ (х А – х В) 2 + (у А – у В) 2
 import math
-
-
 def get_number(input_string):
     '''
     Проверка ввода на число.
@@ -15,7 +13,6 @@ def get_number(input_string):
     except(ValueError):
         print('Ошибка ввода! Введите число: ')
         return get_number(input_string)
-
 def coordinate(point_x1, point_y1, point_x2, point_y2):
     print(round(math.sqrt((point_x1 - point_x2) ** 2 + (point_y1 - point_y2) ** 2), 3))
 
